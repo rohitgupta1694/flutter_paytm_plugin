@@ -1,6 +1,6 @@
-# flutter_paytm_plugin
+# Flutter Paytm Plugin
 
-A flutter plugin to enable payments via PayTM.
+A Flutter plugin to enable payments via PayTM.
 
 ## Getting Started
 
