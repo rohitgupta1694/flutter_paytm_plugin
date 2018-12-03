@@ -10,7 +10,7 @@ import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
 
-class AndroidPaytmPlugin(registrar: Registrar) : MethodCallHandler {
+class FlutterPaytmPlugin(registrar: Registrar) : MethodCallHandler {
 
     private val delegate: IDelegate
 
@@ -28,7 +28,7 @@ class AndroidPaytmPlugin(registrar: Registrar) : MethodCallHandler {
         @JvmStatic
         fun registerWith(registrar: Registrar) {
             val channel = MethodChannel(registrar.messenger(), CHANNEL_NAME)
-            val instance = AndroidPaytmPlugin(registrar)
+            val instance = FlutterPaytmPlugin(registrar)
             channel.setMethodCallHandler(instance)
         }
     }
