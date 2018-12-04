@@ -164,7 +164,7 @@ class FlutterPaytmPlugin {
 
   ///Method Constants
   ///
-  static const String kMethodInit = "init";
+  static const String kMethodInitMethodChannel = "initializeMethodChannel";
   static const String kMethodStartPaymentTransaction =
       "start_payment_transaction";
 
@@ -186,6 +186,7 @@ class FlutterPaytmPlugin {
   static const String kPaytmNetworkUnAvailable = 'paytm_network_unavailable';
   static const String kPaytmUIError = 'paytm_ui_error';
   static const String kPaytmWebPageError = 'paytm_webpage_error';
+  static const String kPaytmMissingParametersError = "paytm_missing_parameters";
 
   /// The [MethodChannel] over which this class communicates.
   ///
@@ -231,13 +232,14 @@ class FlutterPaytmPlugin {
 
   Future<void> _ensureInitialized() {
     if (_initialization == null) {
-      _initialization = channel.invokeMethod(kMethodInit, <String, dynamic>{
+      _initialization =
+          channel.invokeMethod(kMethodInitMethodChannel, <String, dynamic>{
         kBuildVariant: buildVariant,
       })
-        ..catchError((dynamic _) {
-          // Invalidate initialization if it errored out.
-          _initialization = null;
-        });
+            ..catchError((dynamic _) {
+              // Invalidate initialization if it errored out.
+              _initialization = null;
+            });
     }
     return _initialization;
   }
@@ -287,6 +289,28 @@ class FlutterPaytmPlugin {
   ///
   Future<PaytmTransactionResponse> startPaytmTransaction(
       Map<String, dynamic> checksumRequestObject) {
+    /*
+    Reference Object:
+
+    [
+    "MID": "rxazcv89315285244163",
+    "ORDER_ID
+    ": "order1",
+    "CUST_ID":
+    "cust123",
+    "MOBILE_NO": "7777777777
+    ",
+    "EMAIL": "username@emailprovider.com",
+    "CHANNEL_ID": "WAP",
+    "WEBSITE
+    ": "WEBSTAGING",
+    "TXN_AMOUNT":
+    "100.12",
+    "INDUSTRY_TYPE_ID": "Retail
+    ",
+    "CHECKSUMHASH": "oCDBVF+hvVb68JvzbKI40TOtcxlNjMdixi9FnRSh80Ub7XfjvgNr9NrfrOCPLmt65UhStCkrDnlYkclz1qE0uBMOrmuKLGlybuErulbLYSQ=",
+    "CALLBACK_URL": "https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=order1"]*/
+
     final Future<PaytmTransactionResponse> result =
         _addMethodCall(kMethodStartPaymentTransaction, checksumRequestObject);
     bool isCanceled(dynamic error) =>
@@ -297,7 +321,8 @@ class FlutterPaytmPlugin {
             error.code == kPaytmUIError ||
             error.code == kPaytmUserAuthentication ||
             error.code == kPaytmUserCancelled ||
-            error.code == kPaytmWebPageError);
+            error.code == kPaytmWebPageError ||
+            error.code == kPaytmMissingParametersError);
     return result.catchError((dynamic _) => null, test: isCanceled);
   }
 }

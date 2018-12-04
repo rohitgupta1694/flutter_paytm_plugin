@@ -10,29 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b97dbee4-c280-4968-8746-ec98ffff1593" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Headers/PaymentSDK-Swift.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Headers/PaymentSDK.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Info.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm64.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm64.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/i386.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/i386.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/x86_64.swiftdoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/x86_64.swiftmodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/module.modulemap" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/PaymentSDK" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Android_Libraries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Android_Libraries.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/AndroidPaytmPlugin.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter_paytm_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_paytm_plugin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterPaytmPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterPaytmPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/flutter_paytm_plugin.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/flutter_paytm_plugin.podspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_paytm_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_paytm_plugin.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -49,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="flutter_paytm_plugin.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="flutter_paytm_plugin.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="323" selection-start-line="323" selection-end-line="323" />
+            <state relative-caret-position="-525">
+              <caret line="313" lean-forward="true" selection-start-line="313" selection-end-line="313" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
                 <element signature="e#4312#5348#0" expanded="true" />
@@ -61,36 +45,28 @@
                 <element signature="e#7947#8189#0" expanded="true" />
                 <element signature="e#8227#8563#0" expanded="true" />
                 <element signature="e#9006#9970#0" expanded="true" />
-                <element signature="e#10503#11143#0" expanded="true" />
+                <element signature="e#11390#11575#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwiftFlutterPaytmPlugin.swift" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SwiftFlutterPaytmPlugin.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterPaytmPlugin.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="165">
+              <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Runner-Bridging-Header.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/ios/Runner/Runner-Bridging-Header.h">
+      <file leaf-file-name="platform_channel.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/services/platform_channel.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="449">
+              <caret line="283" column="18" selection-start-line="283" selection-start-column="18" selection-end-line="283" selection-end-column="18" />
               <folding>
-                <element signature="e#306#359#0" expanded="true" />
-                <element signature="e#533#777#0" expanded="true" />
+                <element signature="e#11104#11441#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,9 +112,9 @@
         <option value="$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt" />
         <option value="$PROJECT_DIR$/example/lib/main.dart" />
         <option value="$PROJECT_DIR$/example/lib/common/paytm_transaction_response.dart" />
-        <option value="$PROJECT_DIR$/lib/flutter_paytm_plugin.dart" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/lib/flutter_paytm_plugin.dart" />
       </list>
     </option>
   </component>
@@ -153,6 +129,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -163,18 +141,18 @@
             <path>
               <item name="flutter_paytm_plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_paytm_plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_paytm_plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_paytm_plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
               <item name="ios" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flutter_paytm_plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_paytm_plugin" type="462c0819:PsiDirectoryNode" />
               <item name="ios" type="462c0819:PsiDirectoryNode" />
+              <item name="Classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_paytm_plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_paytm_plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -182,12 +160,10 @@
         <option name="show-excluded-files" value="false" />
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/dogether/FlutterPlugins/flutter_paytm_plugin/android/src/main/kotlin/com/flutter/flutterpaytmplugin/AndroidPaytmPlugin.kt&#10;F&#9;FILE&#9;file:///Users/dogether/FlutterPlugins/flutter_paytm_plugin/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt&#10;FlutterP&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="Flutter&#9;FILE&#9;file:///Users/dogether/FlutterPlugins/flutter_paytm_plugin/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt&#10;F&#9;FILE&#9;file:///Users/dogether/FlutterPlugins/flutter_paytm_plugin/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt&#10;FlutterP&#9;null&#9;null" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -289,14 +265,13 @@
       <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32930514" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Flutter Performance" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.326284" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3247734" />
       <window_info id="Captures" order="4" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49887133" visible="true" weight="0.24918567" />
       <window_info anchor="right" id="Fabric" order="9" />
@@ -308,6 +283,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32930514" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
@@ -332,7 +308,7 @@
             <element signature="e#7947#8189#0" expanded="true" />
             <element signature="e#8227#8563#0" expanded="true" />
             <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#10503#11143#0" expanded="true" />
+            <element signature="e#11390#11575#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -348,7 +324,7 @@
             <element signature="e#7947#8189#0" expanded="true" />
             <element signature="e#8227#8563#0" expanded="true" />
             <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#10503#11143#0" expanded="true" />
+            <element signature="e#11390#11575#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -364,7 +340,7 @@
             <element signature="e#7947#8189#0" expanded="true" />
             <element signature="e#8227#8563#0" expanded="true" />
             <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#10503#11143#0" expanded="true" />
+            <element signature="e#11390#11575#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -390,7 +366,7 @@
             <element signature="e#7947#8189#0" expanded="true" />
             <element signature="e#8227#8563#0" expanded="true" />
             <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#10503#11143#0" expanded="true" />
+            <element signature="e#11390#11575#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -406,7 +382,7 @@
             <element signature="e#7947#8189#0" expanded="true" />
             <element signature="e#8227#8563#0" expanded="true" />
             <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#10503#11143#0" expanded="true" />
+            <element signature="e#11390#11575#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -422,7 +398,7 @@
             <element signature="e#7947#8189#0" expanded="true" />
             <element signature="e#8227#8563#0" expanded="true" />
             <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#10503#11143#0" expanded="true" />
+            <element signature="e#11390#11575#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -474,7 +450,7 @@
             <element signature="e#7947#8189#0" expanded="true" />
             <element signature="e#8227#8563#0" expanded="true" />
             <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#10503#11143#0" expanded="true" />
+            <element signature="e#11390#11575#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -533,7 +509,7 @@
             <element signature="e#7947#8189#0" expanded="true" />
             <element signature="e#8227#8563#0" expanded="true" />
             <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#10503#11143#0" expanded="true" />
+            <element signature="e#11390#11575#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -597,23 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="e#40#454#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/services/platform_channel.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="283" column="18" selection-start-line="283" selection-start-column="18" selection-end-line="283" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -718,10 +677,37 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="e#40#454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/services/platform_channel.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="283" column="18" selection-start-line="283" selection-start-column="18" selection-end-line="283" selection-end-column="18" />
+          <folding>
+            <element signature="e#11104#11441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterPaytmPlugin.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="323" selection-start-line="323" selection-end-line="323" />
+        <state relative-caret-position="-525">
+          <caret line="313" lean-forward="true" selection-start-line="313" selection-end-line="313" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
             <element signature="e#4312#5348#0" expanded="true" />
@@ -729,15 +715,8 @@
             <element signature="e#7947#8189#0" expanded="true" />
             <element signature="e#8227#8563#0" expanded="true" />
             <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#10503#11143#0" expanded="true" />
+            <element signature="e#11390#11575#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterPaytmPlugin.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

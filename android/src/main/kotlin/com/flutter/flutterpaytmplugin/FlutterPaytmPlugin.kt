@@ -18,7 +18,7 @@ class FlutterPaytmPlugin(registrar: Registrar) : MethodCallHandler {
         private const val CHANNEL_NAME = "flutterpaytmplugin.flutter.com/flutter_paytm_plugin"
 
         //Method Constants
-        private const val METHOD_INIT = "init"
+        private const val METHOD_INIT = "initializeMethodChannel"
         private const val METHOD_START_PAYMENT_TRANSACTION = "start_payment_transaction"
 
         //Argument Constants
@@ -39,7 +39,7 @@ class FlutterPaytmPlugin(registrar: Registrar) : MethodCallHandler {
 
     override fun onMethodCall(call: MethodCall, result: Result) {
         when (call.method) {
-            METHOD_INIT -> delegate.init(result, call.argument(BUILD_VARIANT))
+            METHOD_INIT -> delegate.initializeMethodChannel(result, call.argument(BUILD_VARIANT))
             METHOD_START_PAYMENT_TRANSACTION -> delegate.startPaymentTransaction(result,
                     call.argument(CHECKSUM_REQUEST_OBJECT))
             else -> result.notImplemented()
@@ -53,7 +53,7 @@ class FlutterPaytmPlugin(registrar: Registrar) : MethodCallHandler {
      */
     abstract class IDelegate {
         /** Initializes this delegate so that it can perform transaction operation.  */
-        abstract fun init(result: Result, buildVariant: String?)
+        abstract fun initializeMethodChannel(result: Result, buildVariant: String?)
 
 
         /**
@@ -105,7 +105,6 @@ class FlutterPaytmPlugin(registrar: Registrar) : MethodCallHandler {
             private const val ERROR_REASON_PAYTM_WEBPAGE_ERROR = "paytm_webpage_error"
         }
 
-
         private fun checkAndSetPendingOperation(method: String, result: Result) {
             if (pendingOperation != null) {
                 throw IllegalStateException(
@@ -118,7 +117,7 @@ class FlutterPaytmPlugin(registrar: Registrar) : MethodCallHandler {
          * Initializes this delegate so that it is ready to perform other operations. The Dart code
          * guarantees that this will be called and completed before any other methods are invoked.
          */
-        override fun init(result: Result, buildVariant: String?) {
+        override fun initializeMethodChannel(result: Result, buildVariant: String?) {
             if (buildVariant.isNullOrBlank() || buildVariant.isNullOrEmpty()) {
                 result.error(ERROR_REASON_BUILD_VARIANT_NOT_PASSED, "Need a build variant", null)
             } else {
@@ -131,10 +130,10 @@ class FlutterPaytmPlugin(registrar: Registrar) : MethodCallHandler {
         }
 
         override fun startPaymentTransaction(result: Result, checkSumRequestObject: HashMap<String, String>?) {
-            checkAndSetPendingOperation(METHOD_START_PAYMENT_TRANSACTION, result)
             if (checkSumRequestObject == null || checkSumRequestObject.isEmpty()) {
                 result.error(ERROR_REASON_CHECKSUM_OBJECT_NOT_PASSED, "Checksum request object not passed", null)
             } else {
+                checkAndSetPendingOperation(METHOD_START_PAYMENT_TRANSACTION, result)
                 paytmPGService!!.initialize(PaytmOrder(checkSumRequestObject), null)
                 paytmPGService!!.startPaymentTransaction(registrar.activeContext(), true, true,
                         this)
