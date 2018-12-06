@@ -65,7 +65,7 @@ class PaytmTransactionResponse implements TransactionResponse {
   static const String kPaytmGatewayName = "GATEWAYNAME";
   static const String kPaytmResponseMessage = "RESPMSG";
 
-  PaytmTransactionResponse._(Map<dynamic, dynamic> data)
+  PaytmTransactionResponse._(dynamic data)
       : paytmBankName = data[kPaytmBankName],
         paytmBankTransactionId = data[kPaytmBankTransactionId],
         paytmChecksumHash = data[kPaytmChecksumHash],
@@ -98,7 +98,7 @@ class PaytmTransactionResponse implements TransactionResponse {
 
   @override
   String toString() {
-    final Map<String, dynamic> data = <String, dynamic>{
+    final Map<String, String> data = <String, String>{
       kPaytmBankName: paytmBankName,
       kPaytmBankTransactionId: paytmBankTransactionId,
       kPaytmChecksumHash: paytmChecksumHash,
@@ -159,12 +159,12 @@ class PaytmTransactionResponse implements TransactionResponse {
 class FlutterPaytmPlugin {
   FlutterPaytmPlugin({this.buildVariant});
 
-  static const String kBuildVariant = "buildVariant";
+  static const String kBuildVariant = "build_variant";
   static const String kChecksumRequestObject = "checksum_request_object";
 
   ///Method Constants
   ///
-  static const String kMethodInitMethodChannel = "initializeMethodChannel";
+  static const String kMethodInitPaytmService = "initialize_paytm_service";
   static const String kMethodStartPaymentTransaction =
       "start_payment_transaction";
 
@@ -205,15 +205,22 @@ class FlutterPaytmPlugin {
   Stream<PaytmTransactionResponse> get onTransactionResponseChanged =>
       _transactionResponseController.stream;
 
-  // Future that completes when we've finished calling `init` on the native side
-  Future<void> _initialization;
+  StreamController<dynamic> _errorController =
+      StreamController<dynamic>.broadcast();
+
+  /// Subscribe to this stream to be notified when there is some error.
+  ///
+  Stream<dynamic> get onErrorOccured => _errorController.stream;
 
   Future<PaytmTransactionResponse> _callMethod(
-      String method, Map<String, dynamic> checksumRequestObject) async {
-    await _ensureInitialized();
+      String method, Map<String, String> checksumRequestObject) async {
 
-    final Map<dynamic, dynamic> response =
-        await channel.invokeMethod(method, <String, dynamic>{
+    await channel.invokeMethod(kMethodInitPaytmService, <String, String>{
+      kBuildVariant: buildVariant.toString(),
+    });
+
+    final dynamic response =
+        await channel.invokeMethod(method, <String, Map<String, String>>{
       kChecksumRequestObject: checksumRequestObject,
     });
     return _setPaytmTransactionResponse(response != null && response.isNotEmpty
@@ -230,20 +237,6 @@ class FlutterPaytmPlugin {
     return paytmTransactionResponse;
   }
 
-  Future<void> _ensureInitialized() {
-    if (_initialization == null) {
-      _initialization =
-          channel.invokeMethod(kMethodInitMethodChannel, <String, dynamic>{
-        kBuildVariant: buildVariant,
-      })
-            ..catchError((dynamic _) {
-              // Invalidate initialization if it errored out.
-              _initialization = null;
-            });
-    }
-    return _initialization;
-  }
-
   /// Keeps track of the most recently scheduled method call.
   _MethodCompleter _lastMethodCompleter;
 
@@ -252,7 +245,7 @@ class FlutterPaytmPlugin {
   /// At most one in flight call is allowed to prevent concurrent (out of order)
   /// updates to [paytmTransactionResponse] and [onTransactionResponseChanged].
   Future<PaytmTransactionResponse> _addMethodCall(
-      String method, Map<String, dynamic> checksumRequestObject) {
+      String method, Map<String, String> checksumRequestObject) {
     if (_lastMethodCompleter == null) {
       _lastMethodCompleter = _MethodCompleter(method)
         ..complete(_callMethod(method, checksumRequestObject));
@@ -261,16 +254,9 @@ class FlutterPaytmPlugin {
 
     final _MethodCompleter completer = _MethodCompleter(method);
     _lastMethodCompleter.future.whenComplete(() {
-      // If after the last completed call currentUser is not null and requested
-      // method is a sign in method, re-use the same authenticated user
-      // instead of making extra call to the native side.
-      if (method == kMethodStartPaymentTransaction &&
-          _paytmTransactionResponse != null) {
-        completer.complete(_paytmTransactionResponse);
-      } else {
-        completer.complete(_callMethod(method, checksumRequestObject));
-      }
+      completer.complete(_callMethod(method, checksumRequestObject));
     }).catchError((dynamic _) {
+      _errorController.add(_);
       // Ignore if previous call completed with an error.
     });
     _lastMethodCompleter = completer;
@@ -288,29 +274,7 @@ class FlutterPaytmPlugin {
   /// successful transaction or `null` in case transaction process was aborted.
   ///
   Future<PaytmTransactionResponse> startPaytmTransaction(
-      Map<String, dynamic> checksumRequestObject) {
-    /*
-    Reference Object:
-
-    [
-    "MID": "rxazcv89315285244163",
-    "ORDER_ID
-    ": "order1",
-    "CUST_ID":
-    "cust123",
-    "MOBILE_NO": "7777777777
-    ",
-    "EMAIL": "username@emailprovider.com",
-    "CHANNEL_ID": "WAP",
-    "WEBSITE
-    ": "WEBSTAGING",
-    "TXN_AMOUNT":
-    "100.12",
-    "INDUSTRY_TYPE_ID": "Retail
-    ",
-    "CHECKSUMHASH": "oCDBVF+hvVb68JvzbKI40TOtcxlNjMdixi9FnRSh80Ub7XfjvgNr9NrfrOCPLmt65UhStCkrDnlYkclz1qE0uBMOrmuKLGlybuErulbLYSQ=",
-    "CALLBACK_URL": "https://securegw-stage.paytm.in/theia/paytmCallback?ORDER_ID=order1"]*/
-
+      Map<String, String> checksumRequestObject) {
     final Future<PaytmTransactionResponse> result =
         _addMethodCall(kMethodStartPaymentTransaction, checksumRequestObject);
     bool isCanceled(dynamic error) =>
@@ -323,7 +287,8 @@ class FlutterPaytmPlugin {
             error.code == kPaytmUserCancelled ||
             error.code == kPaytmWebPageError ||
             error.code == kPaytmMissingParametersError);
-    return result.catchError((dynamic _) => null, test: isCanceled);
+    return result.catchError((dynamic _) => _errorController.add(_),
+        test: isCanceled);
   }
 }
 

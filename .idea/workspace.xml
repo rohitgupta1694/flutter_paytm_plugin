@@ -13,9 +13,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Android_Libraries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Android_Libraries.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter_paytm_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_paytm_plugin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterPaytmPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterPaytmPlugin.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/flutter_paytm_plugin.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/flutter_paytm_plugin.podspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/flutter_paytm_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_paytm_plugin.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
@@ -33,50 +40,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="109" column="36" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#640#693#0" expanded="true" />
+                <element signature="e#808#1812#0" expanded="true" />
+                <element signature="e#1863#2617#0" expanded="true" />
+                <element signature="e#4730#6034#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="flutter_paytm_plugin.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-525">
-              <caret line="313" lean-forward="true" selection-start-line="313" selection-end-line="313" />
+            <state relative-caret-position="105">
+              <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="216" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
-                <element signature="e#4312#5348#0" expanded="true" />
-                <element signature="e#7477#7831#0" expanded="true" />
-                <element signature="e#7947#8189#0" expanded="true" />
-                <element signature="e#8227#8563#0" expanded="true" />
-                <element signature="e#9006#9970#0" expanded="true" />
-                <element signature="e#11390#11575#0" expanded="true" />
+                <element signature="e#2569#3114#0" expanded="true" />
+                <element signature="e#4296#5332#0" expanded="true" />
+                <element signature="e#8281#8523#0" expanded="true" />
+                <element signature="e#9427#10031#0" expanded="true" />
+                <element signature="e#10563#11288#0" expanded="true" />
+                <element signature="e#12167#12352#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SwiftFlutterPaytmPlugin.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterPaytmPlugin.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="platform_channel.dart" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/services/platform_channel.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="283" column="18" selection-start-line="283" selection-start-column="18" selection-end-line="283" selection-end-column="18" />
-              <folding>
-                <element signature="e#11104#11441#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -94,12 +87,21 @@
     <findStrings>
       <find>paytm</find>
       <find>GoogleSignInAccount</find>
+      <find>catchError</find>
+      <find>_errorController</find>
+      <find>initializeMethodChannel</find>
+      <find>startPaymentTransaction</find>
+      <find>dynamic</find>
+      <find>Any</find>
+      <find>kMethodInitMethodChannel</find>
     </findStrings>
     <replaceStrings>
       <replace>PayTMTransactionResponse</replace>
       <replace>paytm</replace>
       <replace>Paytm</replace>
       <replace>PaytmTransactionResponse</replace>
+      <replace>String</replace>
+      <replace>kMethodInitPaytmService</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -108,12 +110,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt" />
-        <option value="$PROJECT_DIR$/example/lib/main.dart" />
         <option value="$PROJECT_DIR$/example/lib/common/paytm_transaction_response.dart" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/ios/flutter_paytm_plugin.podspec" />
+        <option value="$PROJECT_DIR$/example/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt" />
+        <option value="$PROJECT_DIR$/ios/Classes/SwiftFlutterPaytmPlugin.swift" />
+        <option value="$PROJECT_DIR$/example/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/flutter_paytm_plugin.dart" />
       </list>
     </option>
@@ -129,14 +134,32 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="flutter_paytm_plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_paytm_plugin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_paytm_plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_paytm_plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_paytm_plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_paytm_plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="android" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flutter_paytm_plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flutter_paytm_plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="example" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flutter_paytm_plugin" type="b2602c69:ProjectViewProjectNode" />
@@ -159,12 +182,12 @@
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Flutter&#9;FILE&#9;file:///Users/dogether/FlutterPlugins/flutter_paytm_plugin/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt&#10;F&#9;FILE&#9;file:///Users/dogether/FlutterPlugins/flutter_paytm_plugin/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt&#10;FlutterP&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="Flu&#9;null&#9;null&#10;Flutter&#9;FILE&#9;file:///Users/dogether/FlutterPlugins/flutter_paytm_plugin/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt&#10;F&#9;FILE&#9;file:///Users/dogether/FlutterPlugins/flutter_paytm_plugin/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt&#10;FlutterP&#9;null&#9;null" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -249,6 +272,15 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
@@ -256,36 +288,36 @@
       <window_info anchor="bottom" id="Android Profiler" order="12" show_stripe_button="false" />
       <window_info id="Build Variants" order="3" sideWeight="0.5011287" side_tool="true" weight="0.24918567" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50080776" side_tool="true" weight="0.3286385" />
-      <window_info anchor="bottom" id="Dart Analysis" order="7" sideWeight="0.49919224" weight="0.32776934" />
-      <window_info anchor="right" id="Flutter Outline" order="6" />
+      <window_info anchor="bottom" id="Dart Analysis" order="7" sideWeight="0.49919224" weight="0.326284" />
+      <window_info anchor="right" id="Flutter Outline" order="6" weight="0.32980457" />
       <window_info anchor="bottom" id="Logcat" order="10" weight="0.32930514" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" weight="0.32980457" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.51057404" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32930514" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32930514" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Flutter Performance" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3247734" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32930514" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32930514" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32326284" />
       <window_info id="Captures" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49887133" visible="true" weight="0.24918567" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49887133" visible="true" weight="0.24918567" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Fabric" order="9" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="right" id="Flutter Inspector" order="3" />
+      <window_info anchor="right" id="Flutter Inspector" order="3" weight="0.32980457" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32930514" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -293,116 +325,345 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>53</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>54</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>215</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>216</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>51</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>281</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>289</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>44</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>68</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>69</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>56</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>82</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>36</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>37</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>39</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>42</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>46</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>277</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>279</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>248</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>249</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>251</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>250</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>254</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>258</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>262</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>255</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>256</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>232</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>233</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>142</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>149</line>
+          <properties />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>148</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>166</line>
+          <properties />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>180</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>164</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>182</line>
+          <properties />
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>194</line>
+          <properties />
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>203</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>207</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>212</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>216</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>220</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>140</line>
+          <properties />
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>117</line>
+          <properties />
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>165</line>
+          <properties />
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt</url>
+          <line>141</line>
+          <properties />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="dart-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="108" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="FlutterRunConfigurationType">
+        <watch expression="buildVariant.toString()" language="Dart" />
+        <watch expression="buildVariant" language="Dart" />
+        <watch expression="_paytmTransactionResponse" language="Dart" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>data[kPaytmStatus]</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data[&quot;STATUS&quot;]</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data.kPaytmBankName</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>response[kPaytmBankName]</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>response[kPaytmOrderId]</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>response is Null</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>json.decodeJson(response)</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new Map&lt;String, String&gt;.from(response)</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Map&lt;String, String&gt; data = response</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#4312#5348#0" expanded="true" />
-            <element signature="e#7477#7831#0" expanded="true" />
-            <element signature="e#7947#8189#0" expanded="true" />
-            <element signature="e#8227#8563#0" expanded="true" />
-            <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#11390#11575#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="130" column="14" selection-start-line="130" selection-start-column="14" selection-end-line="130" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#4312#5348#0" expanded="true" />
-            <element signature="e#7477#7831#0" expanded="true" />
-            <element signature="e#7947#8189#0" expanded="true" />
-            <element signature="e#8227#8563#0" expanded="true" />
-            <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#11390#11575#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#4312#5348#0" expanded="true" />
-            <element signature="e#7477#7831#0" expanded="true" />
-            <element signature="e#7947#8189#0" expanded="true" />
-            <element signature="e#8227#8563#0" expanded="true" />
-            <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#11390#11575#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="74" column="58" lean-forward="true" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
-          <folding>
-            <element signature="e#40#454#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#4312#5348#0" expanded="true" />
-            <element signature="e#7477#7831#0" expanded="true" />
-            <element signature="e#7947#8189#0" expanded="true" />
-            <element signature="e#8227#8563#0" expanded="true" />
-            <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#11390#11575#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#4312#5348#0" expanded="true" />
-            <element signature="e#7477#7831#0" expanded="true" />
-            <element signature="e#7947#8189#0" expanded="true" />
-            <element signature="e#8227#8563#0" expanded="true" />
-            <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#11390#11575#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#4312#5348#0" expanded="true" />
-            <element signature="e#7477#7831#0" expanded="true" />
-            <element signature="e#7947#8189#0" expanded="true" />
-            <element signature="e#8227#8563#0" expanded="true" />
-            <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#11390#11575#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -445,12 +706,12 @@
           <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#4312#5348#0" expanded="true" />
-            <element signature="e#7477#7831#0" expanded="true" />
-            <element signature="e#7947#8189#0" expanded="true" />
-            <element signature="e#8227#8563#0" expanded="true" />
-            <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#11390#11575#0" expanded="true" />
+            <element signature="e#2569#3114#0" expanded="true" />
+            <element signature="e#4296#5332#0" expanded="true" />
+            <element signature="e#8281#8523#0" expanded="true" />
+            <element signature="e#9427#10031#0" expanded="true" />
+            <element signature="e#10563#11288#0" expanded="true" />
+            <element signature="e#12167#12352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -504,12 +765,12 @@
           <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#4312#5348#0" expanded="true" />
-            <element signature="e#7477#7831#0" expanded="true" />
-            <element signature="e#7947#8189#0" expanded="true" />
-            <element signature="e#8227#8563#0" expanded="true" />
-            <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#11390#11575#0" expanded="true" />
+            <element signature="e#2569#3114#0" expanded="true" />
+            <element signature="e#4296#5332#0" expanded="true" />
+            <element signature="e#8281#8523#0" expanded="true" />
+            <element signature="e#9427#10031#0" expanded="true" />
+            <element signature="e#10563#11288#0" expanded="true" />
+            <element signature="e#12167#12352#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -552,21 +813,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/android/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-758" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/android/flutter_paytm_plugin_example_android.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/common/paytm_transaction_response.dart">
@@ -593,21 +842,6 @@
     <entry file="file://$PROJECT_DIR$/flutter_paytm_plugin.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ios/flutter_paytm_plugin.podspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#889#907#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/android/.gitignore">
@@ -651,17 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding>
-            <element signature="e#306#359#0" expanded="true" />
-            <element signature="e#533#777#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example/ios/Runner/GeneratedPluginRegistrant.h">
       <provider selected="true" editor-type-id="text-editor">
         <state />
@@ -677,19 +900,93 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt">
+    <entry file="file://$PROJECT_DIR$/android/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="335">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           <folding>
-            <element signature="e#40#454#0" expanded="true" />
+            <element signature="e#889#907#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/android/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-760" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/widgets/framework.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="962" column="19" selection-start-line="962" selection-start-column="19" selection-end-line="962" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ios/flutter_paytm_plugin.podspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/services/message_codecs.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="550" column="6" selection-start-line="550" selection-start-column="6" selection-end-line="550" selection-end-column="6" />
+          <folding>
+            <element signature="e#11700#13504#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/bin/cache/pkg/sky_engine/lib/async/future.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="640" column="12" selection-start-line="640" selection-start-column="12" selection-end-line="640" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/bin/cache/pkg/sky_engine/lib/async/stream_controller.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="232" column="7" selection-start-line="232" selection-start-column="7" selection-end-line="232" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/pgplussdk-1.1.5.aar/83d8df3c880e0c724883072cf6b9ec25/jars/classes.jar!/com/paytm/pgsdk/PaytmOrder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="method#PaytmOrder#0;class#PaytmOrder#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/material/theme_data.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="441" column="14" selection-start-line="441" selection-start-column="14" selection-end-line="441" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/services/platform_channel.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
+        <state relative-caret-position="104">
           <caret line="283" column="18" selection-start-line="283" selection-start-column="18" selection-end-line="283" selection-end-column="18" />
           <folding>
             <element signature="e#11104#11441#0" expanded="true" />
@@ -699,23 +996,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterPaytmPlugin.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="70" />
+        <state relative-caret-position="40">
+          <caret line="63" column="74" lean-forward="true" selection-start-line="63" selection-start-column="74" selection-end-line="63" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-379">
+          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#473#0" expanded="true" />
+            <element signature="e#7140#7176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="109" column="36" selection-start-line="109" selection-start-column="36" selection-end-line="109" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#640#693#0" expanded="true" />
+            <element signature="e#808#1812#0" expanded="true" />
+            <element signature="e#1863#2617#0" expanded="true" />
+            <element signature="e#4730#6034#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-525">
-          <caret line="313" lean-forward="true" selection-start-line="313" selection-end-line="313" />
+        <state relative-caret-position="105">
+          <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="216" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#4312#5348#0" expanded="true" />
-            <element signature="e#7477#7831#0" expanded="true" />
-            <element signature="e#7947#8189#0" expanded="true" />
-            <element signature="e#8227#8563#0" expanded="true" />
-            <element signature="e#9006#9970#0" expanded="true" />
-            <element signature="e#11390#11575#0" expanded="true" />
+            <element signature="e#2569#3114#0" expanded="true" />
+            <element signature="e#4296#5332#0" expanded="true" />
+            <element signature="e#8281#8523#0" expanded="true" />
+            <element signature="e#9427#10031#0" expanded="true" />
+            <element signature="e#10563#11288#0" expanded="true" />
+            <element signature="e#12167#12352#0" expanded="true" />
           </folding>
         </state>
       </provider>

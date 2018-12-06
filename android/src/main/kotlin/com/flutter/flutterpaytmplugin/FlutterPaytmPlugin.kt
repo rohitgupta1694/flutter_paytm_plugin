@@ -9,6 +9,7 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
+import java.util.*
 
 class FlutterPaytmPlugin(registrar: Registrar) : MethodCallHandler {
 
@@ -18,7 +19,7 @@ class FlutterPaytmPlugin(registrar: Registrar) : MethodCallHandler {
         private const val CHANNEL_NAME = "flutterpaytmplugin.flutter.com/flutter_paytm_plugin"
 
         //Method Constants
-        private const val METHOD_INIT = "initializeMethodChannel"
+        private const val METHOD_INIT_PAYTM_SERVICE = "initialize_paytm_service"
         private const val METHOD_START_PAYMENT_TRANSACTION = "start_payment_transaction"
 
         //Argument Constants
@@ -39,7 +40,7 @@ class FlutterPaytmPlugin(registrar: Registrar) : MethodCallHandler {
 
     override fun onMethodCall(call: MethodCall, result: Result) {
         when (call.method) {
-            METHOD_INIT -> delegate.initializeMethodChannel(result, call.argument(BUILD_VARIANT))
+            METHOD_INIT_PAYTM_SERVICE -> delegate.initializePaytmService(result, call.argument(BUILD_VARIANT))
             METHOD_START_PAYMENT_TRANSACTION -> delegate.startPaymentTransaction(result,
                     call.argument(CHECKSUM_REQUEST_OBJECT))
             else -> result.notImplemented()
@@ -52,14 +53,18 @@ class FlutterPaytmPlugin(registrar: Registrar) : MethodCallHandler {
      * override some of these functions, such as for testing.
      */
     abstract class IDelegate {
-        /** Initializes this delegate so that it can perform transaction operation.  */
-        abstract fun initializeMethodChannel(result: Result, buildVariant: String?)
 
+        /**
+         * Initialize this delegate so that it can perform transaction operation
+         */
+
+        abstract fun initializePaytmService(result: Result, buildVariant: String?)
 
         /**
          * Returns the PayTM transaction status without displaying any user interface.
          */
         abstract fun startPaymentTransaction(result: Result, checkSumRequestObject: HashMap<String, String>?)
+
     }
 
     /**
@@ -117,7 +122,7 @@ class FlutterPaytmPlugin(registrar: Registrar) : MethodCallHandler {
          * Initializes this delegate so that it is ready to perform other operations. The Dart code
          * guarantees that this will be called and completed before any other methods are invoked.
          */
-        override fun initializeMethodChannel(result: Result, buildVariant: String?) {
+        override fun initializePaytmService(result: Result, buildVariant: String?) {
             if (buildVariant.isNullOrBlank() || buildVariant.isNullOrEmpty()) {
                 result.error(ERROR_REASON_BUILD_VARIANT_NOT_PASSED, "Need a build variant", null)
             } else {
@@ -135,19 +140,21 @@ class FlutterPaytmPlugin(registrar: Registrar) : MethodCallHandler {
             } else {
                 checkAndSetPendingOperation(METHOD_START_PAYMENT_TRANSACTION, result)
                 paytmPGService!!.initialize(PaytmOrder(checkSumRequestObject), null)
-                paytmPGService!!.startPaymentTransaction(registrar.activeContext(), true, true,
+                paytmPGService!!.startPaymentTransaction(registrar.activity(), true, true,
                         this)
             }
         }
 
-        private fun finishWithSuccess(data: Any?) {
+        private fun finishWithSuccess(data: Map<String, String>?) {
             pendingOperation!!.result.success(data)
             pendingOperation = null
+            paytmPGService = null
         }
 
         private fun finishWithError(errorCode: String, errorMessage: String) {
             pendingOperation!!.result.error(errorCode, errorMessage, null)
             pendingOperation = null
+            paytmPGService = null
         }
 
         private class PendingOperation internal constructor(internal val method: String, internal val result: Result)
@@ -155,22 +162,22 @@ class FlutterPaytmPlugin(registrar: Registrar) : MethodCallHandler {
         //region PayTM Transaction Callbacks
 
         override fun onTransactionResponse(inResponse: Bundle?) {
-            val paytmSuccessResponse = HashMap<String, Any>()
+            val paytmSuccessResponse: Map<String, String>
             if (inResponse != null) {
-                paytmSuccessResponse[PAYTM_STATUS] = inResponse.getString(PAYTM_STATUS)
-                paytmSuccessResponse[PAYTM_CHECKSUM_HASH] = inResponse.getString(PAYTM_CHECKSUM_HASH)
-                paytmSuccessResponse[PAYTM_BANK_NAME] = inResponse.getString(PAYTM_BANK_NAME)
-                paytmSuccessResponse[PAYTM_ORDER_ID] = inResponse.getString(PAYTM_ORDER_ID)
-                paytmSuccessResponse[PAYTM_TRANSACTION_AMOUNT] = inResponse.getString(PAYTM_TRANSACTION_AMOUNT)
-                paytmSuccessResponse[PAYTM_TRANSACTION_DATE] = inResponse.getString(PAYTM_TRANSACTION_DATE)
-                paytmSuccessResponse[PAYTM_MERCHANT_ID] = inResponse.getString(PAYTM_MERCHANT_ID)
-                paytmSuccessResponse[PAYTM_TRANSACTION_ID] = inResponse.getString(PAYTM_TRANSACTION_ID)
-                paytmSuccessResponse[PAYTM_RESPONSE_CODE] = inResponse.getString(PAYTM_RESPONSE_CODE)
-                paytmSuccessResponse[PAYTM_PAYMENT_MODE] = inResponse.getString(PAYTM_PAYMENT_MODE)
-                paytmSuccessResponse[PAYTM_BANK_TRANSACTION_ID] = inResponse.getString(PAYTM_BANK_TRANSACTION_ID)
-                paytmSuccessResponse[PAYTM_CURRENCY] = inResponse.getString(PAYTM_CURRENCY)
-                paytmSuccessResponse[PAYTM_GATEWAY_NAME] = inResponse.getString(PAYTM_GATEWAY_NAME)
-                paytmSuccessResponse[PAYTM_RESPONSE_MESSAGE] = inResponse.getString(PAYTM_RESPONSE_MESSAGE)
+                paytmSuccessResponse = HashMap(hashMapOf(PAYTM_STATUS to inResponse.getString(PAYTM_STATUS),
+                        PAYTM_CHECKSUM_HASH to inResponse.getString(PAYTM_CHECKSUM_HASH),
+                        PAYTM_BANK_NAME to inResponse.getString(PAYTM_BANK_NAME),
+                        PAYTM_ORDER_ID to inResponse.getString(PAYTM_ORDER_ID),
+                        PAYTM_TRANSACTION_AMOUNT to inResponse.getString(PAYTM_TRANSACTION_AMOUNT),
+                        PAYTM_TRANSACTION_DATE to inResponse.getString(PAYTM_TRANSACTION_DATE),
+                        PAYTM_MERCHANT_ID to inResponse.getString(PAYTM_MERCHANT_ID),
+                        PAYTM_TRANSACTION_ID to inResponse.getString(PAYTM_TRANSACTION_ID),
+                        PAYTM_RESPONSE_CODE to inResponse.getString(PAYTM_RESPONSE_CODE),
+                        PAYTM_PAYMENT_MODE to inResponse.getString(PAYTM_PAYMENT_MODE),
+                        PAYTM_BANK_TRANSACTION_ID to inResponse.getString(PAYTM_BANK_TRANSACTION_ID),
+                        PAYTM_CURRENCY to inResponse.getString(PAYTM_CURRENCY),
+                        PAYTM_GATEWAY_NAME to inResponse.getString(PAYTM_GATEWAY_NAME),
+                        PAYTM_RESPONSE_MESSAGE to inResponse.getString(PAYTM_RESPONSE_MESSAGE)))
                 finishWithSuccess(paytmSuccessResponse)
             } else {
                 finishWithError(ERROR_REASON_PAYTM_TRANSACTION_RESPONSE_NULL, "Paytm transaction response in null")

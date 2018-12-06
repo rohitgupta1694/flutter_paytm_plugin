@@ -8,8 +8,9 @@ import UIKit
  override some of these functions, such as for testing.
  */
 protocol IDelegate {
-    // Initializes this delegate so that it can perform transaction operation.
-    func initializeMethodChannel(result: @escaping FlutterResult, buildVariant: String?)
+    
+    // Initializes this delegate so that it can perform transaction operation
+    func initializePaytmService(result: @escaping FlutterResult, buildVariant: String?)
     
     // Returns the PayTM transaction status without displaying any user interface.
     func startPaymentTransaction(result: @escaping FlutterResult, checkSumRequestObject: Dictionary<String, String>?)
@@ -19,17 +20,16 @@ protocol IDelegate {
  Delegate class will have the code for making PayTM Transactions.
  */
 class FlutterPaytmPluginDelegate : IDelegate,  PGTransactionDelegate {
-    
     private let flutterRegistrar: FlutterPluginRegistrar
     private var serverType: ServerType?
     private var pendingOperation: PendingOperation?
-    private var paytmTransactionController: PGTransactionViewController
+    private var paytmTransactionController: PGTransactionViewController?
     
     let release = "BuildVariant.release"
     let debug = "BuildVariant.debug"
     
     //Method Constants
-    let methodInit = "initializeMethodChannel"
+    let methodInitPaytmService = "initialize_paytm_service"
     let methodStartPaymentTransaction = "start_payment_transaction"
     
     //PayTM Success Response Constants
@@ -59,14 +59,15 @@ class FlutterPaytmPluginDelegate : IDelegate,  PGTransactionDelegate {
     
     init(registrar: FlutterPluginRegistrar) {
         self.flutterRegistrar = registrar
-        self.paytmTransactionController = PGTransactionViewController()
     }
+    
+    
     
     /*
      Initializes this delegate so that it is ready to perform other operations. The Dart code
      guarantees that this will be called and completed before any other methods are invoked.
      */
-    func initializeMethodChannel(result: FlutterResult, buildVariant: String?) {
+    func initializePaytmService(result: @escaping FlutterResult, buildVariant: String?) {
         if buildVariant?.isEmpty ?? true {
             result(FlutterError(code: errorReasonBuildVariantNotPassed, message: "Need a build variant", details: nil))
         } else {
@@ -76,6 +77,7 @@ class FlutterPaytmPluginDelegate : IDelegate,  PGTransactionDelegate {
     }
     
     func startPaymentTransaction(result: @escaping FlutterResult, checkSumRequestObject: Dictionary<String, String>?) {
+        
         if checkSumRequestObject?.isEmpty ?? true {
             result(FlutterError(code: errorReasonChecksumObjectNotPassed, message: "Need a build variant", details: nil))
         } else {
@@ -83,18 +85,17 @@ class FlutterPaytmPluginDelegate : IDelegate,  PGTransactionDelegate {
             let order = PGOrder(orderID: "", customerID: "", amount: "", eMail: "", mobile: "")
             order.params = checkSumRequestObject!
             
-            self.paytmTransactionController = paytmTransactionController.initTransaction(for: order) as? PGTransactionViewController ?? PGTransactionViewController()
-            self.paytmTransactionController.title = "Paytm Payments"
+            self.paytmTransactionController = paytmTransactionController?.initTransaction(for: order) as? PGTransactionViewController ?? PGTransactionViewController()
+            self.paytmTransactionController?.title = "Paytm Payments"
             if(serverType != .eServerTypeNone) {
-                self.paytmTransactionController.serverType = serverType;
+                self.paytmTransactionController?.serverType = serverType;
             } else {
                 return
             }
-            self.paytmTransactionController.setLoggingEnabled(serverType == .eServerTypeStaging)
-            self.paytmTransactionController.merchant = PGMerchantConfiguration.defaultConfiguration()
-            self.paytmTransactionController.delegate = self
-            //            self.paytmTransactionController.navigationController?.performSegue(withIdentifier: methodStartPaymentTransaction, sender: paytmTransactionController)
-            FlutterViewController.init().performSegue(withIdentifier: methodStartPaymentTransaction, sender: paytmTransactionController)
+            self.paytmTransactionController?.setLoggingEnabled(serverType == .eServerTypeStaging)
+            self.paytmTransactionController?.merchant = PGMerchantConfiguration.defaultConfiguration()
+            self.paytmTransactionController?.delegate = self
+            self.paytmTransactionController?.navigationController?.performSegue(withIdentifier: methodStartPaymentTransaction, sender: paytmTransactionController)
         }
     }
     
@@ -106,9 +107,10 @@ class FlutterPaytmPluginDelegate : IDelegate,  PGTransactionDelegate {
         pendingOperation = PendingOperation(method: method, result: result)
     }
     
-    private func finishWithSuccess(data: Any?) {
+    private func finishWithSuccess(data: Dictionary<String, String>?) {
         pendingOperation!.result(data)
         pendingOperation = nil
+        paytmTransactionController = nil
     }
     
     private func finishWithError(errorCode: String, errorMessage: String) {
@@ -123,21 +125,21 @@ class FlutterPaytmPluginDelegate : IDelegate,  PGTransactionDelegate {
         var paytmSuccessResponse = Dictionary<String, String>()
         if let data = responseString.data(using: String.Encoding.utf8) {
             do {
-                if let jsonresponse = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String:Any] , jsonresponse.count > 0{
-                    paytmSuccessResponse[paytmStatus] = jsonresponse[paytmStatus] as? String ?? ""
-                    paytmSuccessResponse[paytmChecksumHash] = jsonresponse[paytmChecksumHash] as? String ?? ""
-                    paytmSuccessResponse[paytmBankName] = jsonresponse[paytmBankName] as? String ?? ""
-                    paytmSuccessResponse[paytmOrderId] = jsonresponse[paytmOrderId] as? String ?? ""
-                    paytmSuccessResponse[paytmTransactionAmount] = jsonresponse[paytmTransactionAmount] as? String ?? ""
-                    paytmSuccessResponse[paytmTransactionDate] = jsonresponse[paytmTransactionDate] as? String ?? ""
-                    paytmSuccessResponse[paytmTransactionId] = jsonresponse[paytmTransactionId] as? String ?? ""
-                    paytmSuccessResponse[paytmMerchantId] = jsonresponse[paytmMerchantId] as? String ?? ""
-                    paytmSuccessResponse[paytmResponseCode] = jsonresponse[paytmResponseCode] as? String ?? ""
-                    paytmSuccessResponse[paytmPaymentMode] = jsonresponse[paytmPaymentMode] as? String ?? ""
-                    paytmSuccessResponse[paytmBankTransactionId] = jsonresponse[paytmBankTransactionId] as? String ?? ""
-                    paytmSuccessResponse[paytmCurrency] = jsonresponse[paytmCurrency] as? String ?? ""
-                    paytmSuccessResponse[paytmGatewayName] = jsonresponse[paytmGatewayName] as? String ?? ""
-                    paytmSuccessResponse[paytmResponseMessage] = jsonresponse[paytmResponseMessage] as? String ?? ""
+                if let jsonresponse = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String:String] , jsonresponse.count > 0{
+                    paytmSuccessResponse[paytmStatus] = jsonresponse[paytmStatus] ?? ""
+                    paytmSuccessResponse[paytmChecksumHash] = jsonresponse[paytmChecksumHash] ?? ""
+                    paytmSuccessResponse[paytmBankName] = jsonresponse[paytmBankName] ?? ""
+                    paytmSuccessResponse[paytmOrderId] = jsonresponse[paytmOrderId] ?? ""
+                    paytmSuccessResponse[paytmTransactionAmount] = jsonresponse[paytmTransactionAmount] ?? ""
+                    paytmSuccessResponse[paytmTransactionDate] = jsonresponse[paytmTransactionDate] ?? ""
+                    paytmSuccessResponse[paytmTransactionId] = jsonresponse[paytmTransactionId] ?? ""
+                    paytmSuccessResponse[paytmMerchantId] = jsonresponse[paytmMerchantId] ?? ""
+                    paytmSuccessResponse[paytmResponseCode] = jsonresponse[paytmResponseCode] ?? ""
+                    paytmSuccessResponse[paytmPaymentMode] = jsonresponse[paytmPaymentMode] ?? ""
+                    paytmSuccessResponse[paytmBankTransactionId] = jsonresponse[paytmBankTransactionId] ?? ""
+                    paytmSuccessResponse[paytmCurrency] = jsonresponse[paytmCurrency] ?? ""
+                    paytmSuccessResponse[paytmGatewayName] = jsonresponse[paytmGatewayName] ?? ""
+                    paytmSuccessResponse[paytmResponseMessage] = jsonresponse[paytmResponseMessage] ?? ""
                     
                     finishWithSuccess(data: paytmSuccessResponse)
                 }
@@ -176,7 +178,7 @@ public class SwiftFlutterPaytmPlugin: NSObject, FlutterPlugin {
     let checksumRequestObject = "checksum_request_object"
     
     //Method Constants
-    let methodInit = "initializeMethodChannel"
+    let methodInitPaytmService = "initialize_paytm_service"
     let methodStartPaymentTransaction = "start_payment_transaction"
     
     var delegate : IDelegate
@@ -191,15 +193,14 @@ public class SwiftFlutterPaytmPlugin: NSObject, FlutterPlugin {
     }
     
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-        let arguments = call.arguments as? NSDictionary
+        let arguments = call.arguments as? Dictionary<String, Any>
         switch call.method {
-        case methodInit:
-            delegate.initializeMethodChannel(result: result, buildVariant: (arguments?[buildVariant] as? String))
+        case methodInitPaytmService:
+            delegate.initializePaytmService(result: result, buildVariant: (arguments?[buildVariant] as? String))
         case methodStartPaymentTransaction:
-            delegate.startPaymentTransaction(result: result, checkSumRequestObject: (arguments?[checksumRequestObject] as? Dictionary))
+            delegate.startPaymentTransaction(result: result, checkSumRequestObject: (arguments?[checksumRequestObject] as? Dictionary<String, String>))
         default:
             result(FlutterMethodNotImplemented)
         }
-        result("iOS " + UIDevice.current.systemVersion)
     }
 }

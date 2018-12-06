@@ -14,6 +14,9 @@
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_paytm_plugin/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_paytm_plugin/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_paytm_plugin/build" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_paytm_plugin/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_paytm_plugin/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_paytm_plugin/example/build" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_paytm_plugin/example/build/app/intermediates/flutter/debug/flutter_assets/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_paytm_plugin/example/build/app/intermediates/merged_assets/debug/mergeDebugAssets/out/flutter_assets/packages" />
       <excludeFolder url="file://$MODULE_DIR$/example/ios/.symlinks/plugins/flutter_paytm_plugin/example/build/flutter_assets/packages" />

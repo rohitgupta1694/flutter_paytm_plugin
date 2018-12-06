@@ -15,7 +15,9 @@ A new flutter plugin project.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'PaytmSDK'
+  s.preserve_paths = 'PaymentSDK.framework'
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-framework PaymentSDK' }
+  s.vendored_frameworks = 'PaymentSDK.framework'
 
   s.ios.deployment_target = '8.0'
 end

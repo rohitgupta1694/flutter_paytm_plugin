@@ -13,8 +13,7 @@
 		3B80C3941E831B6300D905FE /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; };
 		3B80C3951E831B6300D905FE /* App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6E7E108621B53D7F00031A57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E108521B53D7F00031A57 /* SystemConfiguration.framework */; };
-		6E7E108821B53DA600031A57 /* PaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E108721B53DA600031A57 /* PaymentSDK.framework */; };
-		6E7E108A21B53DC700031A57 /* PaymentSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E108921B53DC700031A57 /* PaymentSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6EF0890021B7C05A0035F5CB /* PaymentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF088FF21B7C05A0035F5CB /* PaymentSDK.framework */; };
 		74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74858FAE1ED2DC5600515810 /* AppDelegate.swift */; };
 		9250AEB30D49C60AD92B1A0B /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2347A1817C1FDB0F70B18121 /* Pods_Runner.framework */; };
 		9705A1C61CF904A100538489 /* Flutter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9740EEBA1CF902C7004384FC /* Flutter.framework */; };
@@ -31,7 +30,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6E7E108A21B53DC700031A57 /* PaymentSDK.framework in Embed Frameworks */,
 				3B80C3951E831B6300D905FE /* App.framework in Embed Frameworks */,
 				9705A1C71CF904A300538489 /* Flutter.framework in Embed Frameworks */,
 			);
@@ -48,8 +46,7 @@
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		3B80C3931E831B6300D905FE /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App.framework; path = Flutter/App.framework; sourceTree = "<group>"; };
 		6E7E108521B53D7F00031A57 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		6E7E108721B53DA600031A57 /* PaymentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PaymentSDK.framework; path = ../../../../Paytm_iOS_App_Kit/Swift/BitCodeDisabled/PaymentSDK.framework; sourceTree = "<group>"; };
-		6E7E108921B53DC700031A57 /* PaymentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PaymentSDK.framework; sourceTree = "<group>"; };
+		6EF088FF21B7C05A0035F5CB /* PaymentSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PaymentSDK.framework; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		74858FAE1ED2DC5600515810 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Flutter/Release.xcconfig; sourceTree = "<group>"; };
@@ -68,8 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E7E108821B53DA600031A57 /* PaymentSDK.framework in Frameworks */,
 				6E7E108621B53D7F00031A57 /* SystemConfiguration.framework in Frameworks */,
+				6EF0890021B7C05A0035F5CB /* PaymentSDK.framework in Frameworks */,
 				9705A1C61CF904A100538489 /* Flutter.framework in Frameworks */,
 				3B80C3941E831B6300D905FE /* App.framework in Frameworks */,
 				9250AEB30D49C60AD92B1A0B /* Pods_Runner.framework in Frameworks */,
@@ -89,7 +86,7 @@
 		8C942C314348E0E29845C561 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6E7E108721B53DA600031A57 /* PaymentSDK.framework */,
+				6EF088FF21B7C05A0035F5CB /* PaymentSDK.framework */,
 				6E7E108521B53D7F00031A57 /* SystemConfiguration.framework */,
 				2347A1817C1FDB0F70B18121 /* Pods_Runner.framework */,
 			);
@@ -113,7 +110,6 @@
 		97C146E51CF9000F007C117D = {
 			isa = PBXGroup;
 			children = (
-				6E7E108921B53DC700031A57 /* PaymentSDK.framework */,
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				97C146EF1CF9000F007C117D /* Products */,
@@ -272,7 +268,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh",
-				"${PODS_ROOT}/../.symlinks/flutter/ios-release/Flutter.framework",
+				"${PODS_ROOT}/../.symlinks/flutter/ios/Flutter.framework",
+				"${PODS_ROOT}/../.symlinks/plugins/flutter_paytm_plugin/ios/PaymentSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/flutter_paytm_plugin/flutter_paytm_plugin.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -280,6 +277,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PaymentSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/flutter_paytm_plugin.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +395,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 					"$(PROJECT_DIR)/Pods/PaytmSDK",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -530,6 +529,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 					"$(PROJECT_DIR)/Pods/PaytmSDK",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -559,6 +559,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 					"$(PROJECT_DIR)/Pods/PaytmSDK",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Runner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
