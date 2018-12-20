@@ -15,7 +15,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  PaytmTransactionResponse _paytmTransactionResponse;
   FlutterPaytmPlugin _flutterPaytmPlugin;
   int state = 0;
   String errorMessage = "", orderId = "";
@@ -34,7 +33,8 @@ class _MyAppState extends State<MyApp> {
 
     _flutterPaytmPlugin.onTransactionResponseChanged
         .listen((PaytmTransactionResponse paytmTransactionResponse) {
-      if (paytmTransactionResponse != null && paytmTransactionResponse.paytmStatus.contains("TXN_SUCCESS")) {
+      if (paytmTransactionResponse != null &&
+          paytmTransactionResponse.paytmStatus.contains("TXN_SUCCESS")) {
         orderId = paytmTransactionResponse.paytmOrderId;
         setState(() {
           state = 4;
@@ -72,6 +72,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               SizedBox(
                 height: 16.0,
@@ -101,7 +102,7 @@ class _MyAppState extends State<MyApp> {
     });
     Map<String, String> header = {HttpHeaders.acceptHeader: 'application/json'};
     //TODO: Always change API before git push
-    final dummyChecksumHashURL = 'DUMMY API';
+    final dummyChecksumHashURL = 'http://48b58eb9.ngrok.io/api/v4/testing/csm';
     try {
       await http.get(dummyChecksumHashURL, headers: header).then((response) {
         if (response.statusCode == HttpStatus.ok) {

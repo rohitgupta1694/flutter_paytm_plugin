@@ -2,6 +2,7 @@ import Flutter
 import PaymentSDK
 import UIKit
 
+
 /*
  A delegate interface that exposes all of the PayTM Payment Gateway functionality for other plugins to use.
  The below [Delegate] implementation should be used by any clients unless they need to
@@ -20,10 +21,12 @@ protocol IDelegate {
  Delegate class will have the code for making PayTM Transactions.
  */
 class FlutterPaytmPluginDelegate : IDelegate,  PGTransactionDelegate {
+    
     private let flutterRegistrar: FlutterPluginRegistrar
+    private var aObjNavi: UINavigationController?
     private var serverType: ServerType?
     private var pendingOperation: PendingOperation?
-    private var paytmTransactionController: PGTransactionViewController?
+    private var paytmTransactionController: PGTransactionViewController? = PGTransactionViewController.init(transactionParameters: ["":""])
     
     let release = "BuildVariant.release"
     let debug = "BuildVariant.debug"
@@ -55,13 +58,12 @@ class FlutterPaytmPluginDelegate : IDelegate,  PGTransactionDelegate {
     // These error codes must match with ones declared on iOS and Dart sides.
     let errorReasonPaytmTransactionResponseNull = "paytm_transaction_response_null"
     let errorReasonPaytmTransactionCancelled = "paytm_transaction_cancelled"
+    let errorReasonPaytmTransactionFailure = "paytm_transaction_failure"
     let errorReasonPaytmMissingParameters = "paytm_missing_parameters"
     
     init(registrar: FlutterPluginRegistrar) {
         self.flutterRegistrar = registrar
     }
-    
-    
     
     /*
      Initializes this delegate so that it is ready to perform other operations. The Dart code
@@ -85,18 +87,39 @@ class FlutterPaytmPluginDelegate : IDelegate,  PGTransactionDelegate {
             let order = PGOrder(orderID: "", customerID: "", amount: "", eMail: "", mobile: "")
             order.params = checkSumRequestObject!
             
-            self.paytmTransactionController = paytmTransactionController?.initTransaction(for: order) as? PGTransactionViewController ?? PGTransactionViewController()
-            self.paytmTransactionController?.title = "Paytm Payments"
-            if(serverType != .eServerTypeNone) {
-                self.paytmTransactionController?.serverType = serverType;
-            } else {
-                return
+            DispatchQueue.main.async {
+                //self.paytmTransactionController = PGTransactionViewController()
+                self.beginPayment(paytmOrder: order)
             }
-            self.paytmTransactionController?.setLoggingEnabled(serverType == .eServerTypeStaging)
-            self.paytmTransactionController?.merchant = PGMerchantConfiguration.defaultConfiguration()
-            self.paytmTransactionController?.delegate = self
-            self.paytmTransactionController?.navigationController?.performSegue(withIdentifier: methodStartPaymentTransaction, sender: paytmTransactionController)
         }
+    }
+    
+    func beginPayment(paytmOrder: PGOrder) {
+        //serverType = serverType.createProductionEnvironment()
+        let type :ServerType = .eServerTypeProduction
+        
+        self.paytmTransactionController =  self.paytmTransactionController!.initTransaction(for: paytmOrder) as?PGTransactionViewController
+        self.paytmTransactionController!.title = "Paytm Payments"
+        self.paytmTransactionController!.setLoggingEnabled(true)
+        if(type != ServerType.eServerTypeNone) {
+            self.paytmTransactionController!.serverType = type;
+        } else {
+            return
+        }
+        self.paytmTransactionController!.merchant = PGMerchantConfiguration.defaultConfiguration()
+        self.paytmTransactionController!.delegate = self
+        // UIApplication.shared.keyWindow?.rootViewController?.present(self.paytmTransactionController!, animated: true)
+        if let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
+            navigationController.pushViewController(self.paytmTransactionController!, animated: true)
+        }
+
+        let storyboard : UIStoryboard? = UIStoryboard.init(name: "Main", bundle: nil)
+        let window: UIWindow = ((UIApplication.shared.delegate?.window)!)!
+
+        let objVC: UIViewController? = storyboard!.instantiateViewController(withIdentifier: "FlutterViewController")
+        self.aObjNavi = UINavigationController(rootViewController: objVC!)
+        window.rootViewController = self.aObjNavi!
+        self.aObjNavi!.pushViewController(self.paytmTransactionController!, animated: true)
     }
     
     private func checkAndSetPendingOperation(method: String, result: @escaping FlutterResult) {
@@ -109,8 +132,8 @@ class FlutterPaytmPluginDelegate : IDelegate,  PGTransactionDelegate {
     
     private func finishWithSuccess(data: Dictionary<String, String>?) {
         pendingOperation!.result(data)
+//        self.paytmTransactionController?.dismiss(animated: true, completion: nil)
         pendingOperation = nil
-        paytmTransactionController = nil
     }
     
     private func finishWithError(errorCode: String, errorMessage: String) {
@@ -140,20 +163,28 @@ class FlutterPaytmPluginDelegate : IDelegate,  PGTransactionDelegate {
                     paytmSuccessResponse[paytmCurrency] = jsonresponse[paytmCurrency] ?? ""
                     paytmSuccessResponse[paytmGatewayName] = jsonresponse[paytmGatewayName] ?? ""
                     paytmSuccessResponse[paytmResponseMessage] = jsonresponse[paytmResponseMessage] ?? ""
-                    
-                    finishWithSuccess(data: paytmSuccessResponse)
+                    if(paytmSuccessResponse[paytmStatus] == "TXN_SUCCESS") {
+                        controller.navigationController?.popViewController(animated: true)
+                        finishWithSuccess(data: paytmSuccessResponse)
+                    } else {
+                        controller.navigationController?.popViewController(animated: true)
+                        finishWithError(errorCode: self.errorReasonPaytmTransactionFailure, errorMessage: "\(paytmSuccessResponse[self.paytmResponseMessage] ?? "Transaction Failure")")
+                    }
                 }
             } catch {
+                controller.navigationController?.popViewController(animated: true)
                 finishWithError(errorCode: errorReasonPaytmTransactionResponseNull, errorMessage: "Paytm transaction response in null")
             }
         }
     }
     
     func didCancelTrasaction(_ controller: PGTransactionViewController) {
-        finishWithError(errorCode: errorReasonPaytmTransactionCancelled, errorMessage: "Transaction cancelled.")
+        controller.navigationController?.popViewController(animated: true)
+        finishWithError(errorCode: errorReasonPaytmTransactionCancelled, errorMessage: "Transaction cancelled by user.")
     }
     
     func errorMisssingParameter(_ controller: PGTransactionViewController, error: NSError?) {
+        controller.navigationController?.popViewController(animated: true)
         finishWithError(errorCode: errorReasonPaytmMissingParameters, errorMessage: "There are some missing parameters.")
     }
     
@@ -182,12 +213,14 @@ public class SwiftFlutterPaytmPlugin: NSObject, FlutterPlugin {
     let methodStartPaymentTransaction = "start_payment_transaction"
     
     var delegate : IDelegate
+    
     init(pluginRegistrar: FlutterPluginRegistrar) {
         delegate = FlutterPaytmPluginDelegate(registrar: pluginRegistrar)
     }
     
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: channelName, binaryMessenger: registrar.messenger())
+        
         let instance = SwiftFlutterPaytmPlugin(pluginRegistrar: registrar)
         registrar.addMethodCallDelegate(instance, channel: channel)
     }

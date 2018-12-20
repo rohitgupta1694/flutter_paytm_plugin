@@ -187,6 +187,7 @@ class FlutterPaytmPlugin {
   static const String kPaytmUIError = 'paytm_ui_error';
   static const String kPaytmWebPageError = 'paytm_webpage_error';
   static const String kPaytmMissingParametersError = "paytm_missing_parameters";
+  static const String kPaytmTransactionFailure = "paytm_transaction_failure";
 
   /// The [MethodChannel] over which this class communicates.
   ///
@@ -286,7 +287,8 @@ class FlutterPaytmPlugin {
             error.code == kPaytmUserAuthentication ||
             error.code == kPaytmUserCancelled ||
             error.code == kPaytmWebPageError ||
-            error.code == kPaytmMissingParametersError);
+            error.code == kPaytmMissingParametersError ||
+            error.code == kPaytmTransactionFailure);
     return result.catchError((dynamic _) => _errorController.add(_),
         test: isCanceled);
   }
