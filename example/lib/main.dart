@@ -102,7 +102,7 @@ class _MyAppState extends State<MyApp> {
     });
     Map<String, String> header = {HttpHeaders.acceptHeader: 'application/json'};
     //TODO: Always change API before git push
-    final dummyChecksumHashURL = 'http://48b58eb9.ngrok.io/api/v4/testing/csm';
+    final dummyChecksumHashURL = 'https://12f5cba7.ngrok.io/api/v4/testing/csm';
     try {
       await http.get(dummyChecksumHashURL, headers: header).then((response) {
         if (response.statusCode == HttpStatus.ok) {
@@ -120,11 +120,16 @@ class _MyAppState extends State<MyApp> {
             "CHANNEL_ID": parsedChecksumRequestObject["CHANNEL_ID"],
             "TXN_AMOUNT": parsedChecksumRequestObject["TXN_AMOUNT"],
             "WEBSITE": parsedChecksumRequestObject["WEBSITE"],
-            "EMAIL": parsedChecksumRequestObject["EMAIL"],
-            "MOBILE_NO": parsedChecksumRequestObject["MOBILE_NO"],
             "CALLBACK_URL": parsedChecksumRequestObject["CALLBACK_URL"],
             "CHECKSUMHASH": parsedChecksumRequestObject["CHECKSUMHASH"]
           };
+
+//          if(parsedChecksumRequestObject["EMAIL"] != null || parsedChecksumRequestObject["MOBILE_NO"] != null) {
+//            checksumRequestObjectMap.addAll({
+//              "EMAIL": parsedChecksumRequestObject["EMAIL"],
+//              "MOBILE_NO": parsedChecksumRequestObject["MOBILE_NO"]
+//            });
+//          }
 
           _flutterPaytmPlugin.startPaytmTransaction(checksumRequestObjectMap);
         } else {

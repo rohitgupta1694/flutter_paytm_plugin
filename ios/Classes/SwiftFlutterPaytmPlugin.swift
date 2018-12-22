@@ -74,14 +74,14 @@ class FlutterPaytmPluginDelegate : IDelegate,  PGTransactionDelegate {
             result(FlutterError(code: errorReasonBuildVariantNotPassed, message: "Need a build variant", details: nil))
         } else {
             serverType = buildVariant == release ? .eServerTypeProduction : .eServerTypeStaging
-            result(nil)
+            result(nil) 
         }
     }
     
     func startPaymentTransaction(result: @escaping FlutterResult, checkSumRequestObject: Dictionary<String, String>?) {
         
         if checkSumRequestObject?.isEmpty ?? true {
-            result(FlutterError(code: errorReasonChecksumObjectNotPassed, message: "Need a build variant", details: nil))
+            result(FlutterError(code: errorReasonChecksumObjectNotPassed, message: "Need a Checksum parameters", details: nil))
         } else {
             checkAndSetPendingOperation(method: methodStartPaymentTransaction, result: result)
             let order = PGOrder(orderID: "", customerID: "", amount: "", eMail: "", mobile: "")
@@ -96,7 +96,7 @@ class FlutterPaytmPluginDelegate : IDelegate,  PGTransactionDelegate {
     
     func beginPayment(paytmOrder: PGOrder) {
         //serverType = serverType.createProductionEnvironment()
-        let type :ServerType = .eServerTypeProduction
+        let type :ServerType = self.serverType!
         
         self.paytmTransactionController =  self.paytmTransactionController!.initTransaction(for: paytmOrder) as?PGTransactionViewController
         self.paytmTransactionController!.title = "Paytm Payments"
@@ -108,11 +108,11 @@ class FlutterPaytmPluginDelegate : IDelegate,  PGTransactionDelegate {
         }
         self.paytmTransactionController!.merchant = PGMerchantConfiguration.defaultConfiguration()
         self.paytmTransactionController!.delegate = self
-        // UIApplication.shared.keyWindow?.rootViewController?.present(self.paytmTransactionController!, animated: true)
+        
         if let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
             navigationController.pushViewController(self.paytmTransactionController!, animated: true)
         }
-
+        
         let storyboard : UIStoryboard? = UIStoryboard.init(name: "Main", bundle: nil)
         let window: UIWindow = ((UIApplication.shared.delegate?.window)!)!
 

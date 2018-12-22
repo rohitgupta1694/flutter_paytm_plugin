@@ -10,124 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b97dbee4-c280-4968-8746-ec98ffff1593" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Android_Libraries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Android_Libraries.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/android/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/example/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/.metadata" beforeDir="false" afterPath="$PROJECT_DIR$/example/.metadata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/kotlin/com/flutter/flutterpaytmpluginexample/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/kotlin/com/flutter/flutterpaytmpluginexample/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/AppFrameworkInfo.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Debug.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/Debug.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/Release.xcconfig" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/Release.xcconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Headers/PaymentSDK-Swift.h" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Headers/PaymentSDK-Swift.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Headers/PaymentSDK.h" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Headers/PaymentSDK.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm64.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm64.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm64.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm64.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/i386.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/i386.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/i386.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/i386.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/x86_64.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/x86_64.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/x86_64.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/x86_64.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/module.modulemap" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/PaymentSDK.framework/Modules/module.modulemap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/contents.xcworkspacedata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/AppDelegate.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/LaunchScreen.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Base.lproj/Main.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Runner-Bridging-Header.h" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Runner-Bridging-Header.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/test/widget_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flutter_paytm_plugin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_paytm_plugin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ios/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Assets/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Assets/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/FlutterPaytmPlugin.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/FlutterPaytmPlugin.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/FlutterPaytmPlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/FlutterPaytmPlugin.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterPaytmPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterPaytmPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/PaymentSDK.framework/Headers/PaymentSDK-Swift.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/PaymentSDK.framework/Headers/PaymentSDK-Swift.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/PaymentSDK.framework/Headers/PaymentSDK.h" beforeDir="false" afterPath="$PROJECT_DIR$/ios/PaymentSDK.framework/Headers/PaymentSDK.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/PaymentSDK.framework/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/PaymentSDK.framework/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm64.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm64.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm64.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/arm64.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/i386.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/i386.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/i386.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/i386.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/x86_64.swiftdoc" beforeDir="false" afterPath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/x86_64.swiftdoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/x86_64.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/PaymentSDK.swiftmodule/x86_64.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/module.modulemap" beforeDir="false" afterPath="$PROJECT_DIR$/ios/PaymentSDK.framework/Modules/module.modulemap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/flutter_paytm_plugin.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/flutter_paytm_plugin.podspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/common/paytm_transaction_response.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/common/paytm_transaction_response.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_paytm_plugin.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_paytm_plugin.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -147,17 +32,18 @@
       <file leaf-file-name="flutter_paytm_plugin.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="194" column="21" selection-start-line="194" selection-start-column="21" selection-end-line="194" selection-end-column="72" />
+            <state relative-caret-position="259">
+              <caret line="215" column="35" selection-start-line="215" selection-start-column="35" selection-end-line="215" selection-end-column="35" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
                 <element signature="e#2555#3100#0" expanded="true" />
+                <element signature="e#3134#3864#0" expanded="true" />
                 <element signature="e#4296#5332#0" expanded="true" />
-                <element signature="e#7697#8146#0" expanded="true" />
-                <element signature="e#8262#8504#0" expanded="true" />
-                <element signature="e#8946#9550#0" expanded="true" />
-                <element signature="e#10082#10807#0" expanded="true" />
-                <element signature="e#11054#11239#0" expanded="true" />
+                <element signature="e#7775#8224#0" expanded="true" />
+                <element signature="e#8340#8582#0" expanded="true" />
+                <element signature="e#9024#9628#0" expanded="true" />
+                <element signature="e#10160#10939#0" expanded="true" />
+                <element signature="e#11186#11371#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,15 +52,13 @@
       <file leaf-file-name="main.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="96" column="3" lean-forward="true" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
+            <state relative-caret-position="232">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
                 <element signature="e#586#639#0" expanded="true" />
                 <element signature="e#754#1832#0" expanded="true" />
-                <element signature="e#1883#2745#0" expanded="true" />
-                <element signature="e#2788#4879#0" expanded="true" />
-                <element signature="e#4904#6281#0" expanded="true" />
+                <element signature="e#1883#2694#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -183,7 +67,7 @@
       <file leaf-file-name="SwiftFlutterPaytmPlugin.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterPaytmPlugin.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
+            <state relative-caret-position="251">
               <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
             </state>
           </provider>
@@ -192,7 +76,7 @@
       <file leaf-file-name="platform_channel.dart" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/services/platform_channel.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="3945">
               <caret line="290" column="6" selection-start-line="290" selection-start-column="6" selection-end-line="290" selection-end-column="6" />
             </state>
           </provider>
@@ -248,8 +132,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="303" />
     <option name="width" value="1280" />
     <option name="height" value="777" />
   </component>
@@ -259,6 +143,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,13 +185,10 @@
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Flu&#9;null&#9;null&#10;Flutter&#9;FILE&#9;file:///Users/dogether/FlutterPlugins/flutter_paytm_plugin/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt&#10;F&#9;FILE&#9;file:///Users/dogether/FlutterPlugins/flutter_paytm_plugin/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt&#10;FlutterP&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file:///Users/dogether/FlutterPlugins/flutter_paytm_plugin/example/lib/main.dart&#10;Flu&#9;null&#9;null&#10;Flutter&#9;FILE&#9;file:///Users/dogether/FlutterPlugins/flutter_paytm_plugin/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt&#10;F&#9;FILE&#9;file:///Users/dogether/FlutterPlugins/flutter_paytm_plugin/android/src/main/kotlin/com/flutter/flutterpaytmplugin/FlutterPaytmPlugin.kt&#10;FlutterP&#9;null&#9;null" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -401,42 +285,42 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="Android Profiler" order="12" show_stripe_button="false" />
-      <window_info id="Build Variants" order="3" sideWeight="0.5011287" side_tool="true" weight="0.24918567" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50080776" side_tool="true" weight="0.3286385" />
-      <window_info anchor="bottom" id="Dart Analysis" order="7" sideWeight="0.49919224" weight="0.326284" />
-      <window_info anchor="right" id="Flutter Outline" order="6" weight="0.32980457" />
-      <window_info anchor="bottom" id="Logcat" order="10" weight="0.32930514" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" weight="0.32980457" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.35347432" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32930514" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32930514" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50080776" side_tool="true" weight="0.3286385" />
       <window_info anchor="bottom" id="Flutter Performance" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Dart Analysis" order="7" sideWeight="0.49919224" weight="0.326284" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32930514" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32930514" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32326284" />
-      <window_info id="Captures" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.4833837" />
+      <window_info anchor="right" id="Flutter Outline" order="6" weight="0.32980457" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49887133" visible="true" weight="0.24918567" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Fabric" order="9" />
       <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.35347432" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" id="Flutter Inspector" order="3" weight="0.32980457" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Captures" order="4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Build Variants" order="3" sideWeight="0.5011287" side_tool="true" weight="0.24918567" />
+      <window_info anchor="bottom" id="Android Profiler" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Logcat" order="10" weight="0.32930514" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32930514" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Device File Explorer" order="5" side_tool="true" weight="0.32980457" />
     </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -457,33 +341,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
-          <line>34</line>
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
-          <line>41</line>
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
-          <line>45</line>
-          <option name="timeStamp" value="111" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
-          <line>50</line>
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
           <line>51</line>
           <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
-          <line>54</line>
-          <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
@@ -492,13 +351,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
-          <line>200</line>
+          <line>205</line>
           <option name="timeStamp" value="119" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="Dart">
-          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
-          <line>57</line>
-          <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="Dart">
           <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
@@ -510,6 +364,61 @@
           <line>259</line>
           <option name="timeStamp" value="128" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>56</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>61</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>133</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>35</line>
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>39</line>
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>42</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>44</line>
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>46</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>37</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/example/lib/main.dart</url>
+          <line>52</line>
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart</url>
+          <line>222</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -519,11 +428,31 @@
           <properties />
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="129" />
+      <option name="time" value="153" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>parsedChecksumRequestObject[&quot;EMAIL&quot;] != null</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>parsedChecksumRequestObject[&quot;EMAIL&quot;] == null</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>parsedChecksumRequestObject</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>parse</expression-string>
+        <language-id>Dart</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>data[kPaytmStatus]</expression-string>
         <language-id>Dart</language-id>
@@ -554,26 +483,6 @@
         <language-id>Dart</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>response is Null</expression-string>
-        <language-id>Dart</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>json.decodeJson(response)</expression-string>
-        <language-id>Dart</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>new Map&lt;String, String&gt;.from(response)</expression-string>
-        <language-id>Dart</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Map&lt;String, String&gt; data = response</expression-string>
-        <language-id>Dart</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
@@ -589,11 +498,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/flutter_paytm_plugin.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/android/flutter_paytm_plugin.iml" />
     <entry file="file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -601,12 +506,13 @@
           <folding>
             <element signature="e#0#20#0" expanded="true" />
             <element signature="e#2555#3100#0" expanded="true" />
+            <element signature="e#3134#3864#0" expanded="true" />
             <element signature="e#4296#5332#0" expanded="true" />
-            <element signature="e#7697#8146#0" expanded="true" />
-            <element signature="e#8262#8504#0" expanded="true" />
-            <element signature="e#8946#9550#0" expanded="true" />
-            <element signature="e#10082#10807#0" expanded="true" />
-            <element signature="e#11054#11239#0" expanded="true" />
+            <element signature="e#7775#8224#0" expanded="true" />
+            <element signature="e#8340#8582#0" expanded="true" />
+            <element signature="e#9024#9628#0" expanded="true" />
+            <element signature="e#10160#10939#0" expanded="true" />
+            <element signature="e#11186#11371#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -649,11 +555,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/android/flutter_paytm_plugin_example_android.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/example/android/flutter_paytm_plugin_example_android.iml" />
     <entry file="file://$PROJECT_DIR$/lib/common/paytm_transaction_response.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -685,16 +587,8 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/flutter_paytm_plugin_android.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/android/flutter_paytm_plugin.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/android/flutter_paytm_plugin_android.iml" />
+    <entry file="file://$PROJECT_DIR$/android/flutter_paytm_plugin.iml" />
     <entry file="file://$PROJECT_DIR$/android/gradle.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state />
@@ -872,46 +766,45 @@
     </entry>
     <entry file="file://$USER_HOME$/Flutter/flutter/packages/flutter/lib/src/services/platform_channel.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="3945">
           <caret line="290" column="6" selection-start-line="290" selection-start-column="6" selection-end-line="290" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="194" column="21" selection-start-line="194" selection-start-column="21" selection-end-line="194" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#2555#3100#0" expanded="true" />
-            <element signature="e#4296#5332#0" expanded="true" />
-            <element signature="e#7697#8146#0" expanded="true" />
-            <element signature="e#8262#8504#0" expanded="true" />
-            <element signature="e#8946#9550#0" expanded="true" />
-            <element signature="e#10082#10807#0" expanded="true" />
-            <element signature="e#11054#11239#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterPaytmPlugin.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="251">
           <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/flutter_paytm_plugin.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="215" column="35" selection-start-line="215" selection-start-column="35" selection-end-line="215" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#2555#3100#0" expanded="true" />
+            <element signature="e#3134#3864#0" expanded="true" />
+            <element signature="e#4296#5332#0" expanded="true" />
+            <element signature="e#7775#8224#0" expanded="true" />
+            <element signature="e#8340#8582#0" expanded="true" />
+            <element signature="e#9024#9628#0" expanded="true" />
+            <element signature="e#10160#10939#0" expanded="true" />
+            <element signature="e#11186#11371#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="96" column="3" lean-forward="true" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
+        <state relative-caret-position="232">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
             <element signature="e#586#639#0" expanded="true" />
             <element signature="e#754#1832#0" expanded="true" />
-            <element signature="e#1883#2745#0" expanded="true" />
-            <element signature="e#2788#4879#0" expanded="true" />
-            <element signature="e#4904#6281#0" expanded="true" />
+            <element signature="e#1883#2694#0" expanded="true" />
           </folding>
         </state>
       </provider>
